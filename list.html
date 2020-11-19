@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>列表页--博信首页</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+
+    <!-- 导航css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+
+     <!-- <link rel="stylesheet" href="css/layui.css"  media="all"> -->
+     <!-- <script src="js/layui.js" charset="utf-8"></script> -->
+     <!-- <script src="js/layui.all.js"></script> -->
+     <!-- <script src="js/element.js"></script> -->
+
+     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    	<script type="text/javascript" src="js/swiper.min.js"></script>
+
+    	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    	<script src="js/jquery-3.1.1.min.js"></script>
+
+
+		<!-- 遮罩 -->
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="css/style1.css">
+
+
+    <style>
+    	*{
+    		margin: 0px;
+    		padding: 0px;
+    	}
+    	a{
+    		color: #333;
+    	}
+    </style>
+
+	<script type="text/javascript">
+    	var scale ='scale（1）' ; 
+		 document.body.style.webkitTransform = scale; // Chrome，Opera，Safari 
+		 document.body.style.msTransform = scale; // IE 9 
+		 document.body.style.transform = scale; // General
+		 
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body style="background: #eee;min-width: 1200px;">
+
+
+<!-- 头部 -->
+<div class="header">
+	<div class="headcon clearfix">
+		<div class="headcon-l">
+			<img src="img/logo.png" style="float: left;">
+			<span>云南成考网<br><small>博信教育官方平台</small></span>
+		</div>
+		<div class="headcon-c">
+			<ul class="clearfix">
+				<li>
+					<a href="">首页</a>
+				</li>
+				<li>
+					<a href="">个人中心</a>
+				</li>
+				<li style="position: relative;">
+					<a href="" class="wx-ewm-t"><img src="img/WeChat.png">关注博信</a>
+					<div class="wx-ewm"><img alt="关注博信" src="img/mp.jpg"></div>
+				</li>
+				<li style="position: relative;">
+					<a href="" class="top-3g-t"><img src="img/Iphone.png">移动端</a>
+					<div class="top-3g"><img alt="移动端" src="img/mp.jpg"></div>
+				</li>
+				<li>
+					<a href=""><img src="img/yonghu.png">关于我们</a>
+				</li>
+				
+				
+			</ul>
+		</div>
+		<div class="lxwm headcon-r">
+			<img src="img/phone.png">
+			<span>0871-65129129<br><small>工作时间：早9:00-晚21:00</small></span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function()
+    {
+        $(".wx-ewm").hide();
+		$(".wx-ewm-t").hover(function(){
+			$(".wx-ewm").show();
+			},function(){
+			$(".wx-ewm").hide();
+		  });
+        $(".top-3g").hide();
+		$(".top-3g-t").hover(function(){
+			$(".top-3g").show();
+			},function(){
+			$(".top-3g").hide();
+		  });
+	});
+</script>
+
+
+
+<!-- 导航 -->
+<div class="menu">
+	<nav class="animenu"> 
+	  <button class="animenu__toggle">
+		<span class="animenu__toggle__bar"></span>
+		<span class="animenu__toggle__bar"></span>
+		<span class="animenu__toggle__bar"></span>
+	  </button>
+	  <ul class="animenu__nav" style="margin: 0px;">
+		<li>
+		  <a href="#"><img src="img/menu.png">&nbsp;考试资讯</a>
+		  <ul class="animenu__nav__child">
+			<li><a href="">招考公告</a></li>
+			<li><a href="">报考指南</a></li>
+			<li><a href="">成绩查询</a></li>
+			<li><a href="">录取分数</a></li>
+			<li><a href="">录取查询</a></li>
+		  </ul>
+		</li>     
+		<li>
+		  <a href="#"><img src="img/menu1.png">&nbsp;报考院校</a>
+		  <ul class="animenu__nav__child">
+			<li><a href="">成人高考</a></li>
+			<li><a href="">成人中专</a></li>
+			<li><a href="">网络教育</a></li>
+			<li><a href="">自学考试</a></li>
+			<li><a href="">开放教育</a></li>
+		  </ul>
+		</li>
+		<li>
+		  <a href="#"><img src="img/menu2.png">&nbsp;热门专业</a>
+		  <ul class="animenu__nav__child">
+			<li><a href="">经管类</a></li>
+			<li><a href="">计算机类</a></li>
+			<li><a href="">师范类</a></li>
+			<li><a href="">农林建筑类</a></li>
+			<li><a href="">法律医学类</a></li>
+		  </ul>
+		</li> 
+		<li>
+		  <a href="#"><img src="img/menu3.png">&nbsp;辅导资料</a>
+		  <ul class="animenu__nav__child">
+			<li><a href="">高起专</a></li>
+			<li><a href="">专升本</a></li>
+			<li><a href="">高起本</a></li>
+			<li><a href="">模拟试题</a></li>
+			<li><a href="">历年真题</a></li>
+		  </ul>
+		</li> 
+		<li>
+		  <a href="#" class="tk-3g-t"><img src="img/menu4.png">&nbsp;题库练习</a>
+		  <div class="tk-3g"><img alt="移动端" src="img/mp.jpg"></div>
+		  <!-- <ul class="animenu__nav__child">
+			<li><a href="">经管类</a></li>
+			<li><a href="">计算机类</a></li>
+			<li><a href="">师范类</a></li>
+			<li><a href="">农林建筑类</a></li>
+			<li><a href="">法律医学类</a></li>
+		  </ul> -->
+		</li> 
+		<li>
+		  <a href="#"><img src="img/menu5.png">&nbsp;教学教务</a>
+		  <ul class="animenu__nav__child">
+			<li><a href="">教务通知</a></li>
+			<li><a href="">信息核对</a></li>
+			<li><a href="">学位申请</a></li>
+			<li><a href="">投诉建议</a></li>
+		  </ul>
+		</li>                   
+	  </ul>
+	</nav>
+</div>
+<script type="text/javascript">
+$(document).ready(function()
+    {
+        $(".tk-3g").hide();
+		$(".tk-3g-t").hover(function(){
+			$(".tk-3g").show();
+			},function(){
+			$(".tk-3g").hide();
+		  });
+	});
+</script>
+
+
+<!-- 列表页 -->
+<div>
+	<img src="img/list/banner.png">
+</div>
+
+<!-- 位置显示 -->
+<section class="posnav page-width">
+	<img src="img/list/dz.png" style="width: 20px;"> 您现在位置：<a href="">考试资讯</a><em>&gt;</em><a href="">招考公告</a>
+</section>	
+
+
+<!-- 内容 -->
+<div class="listcon clearfix">
+	<div class="listcon-l">
+		<div class="lbcon">
+			<ul>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+				<li class="clearfix">
+					<img src="img/article/dongtai.jpg">
+					<div class="lbcon-r">
+						<h4>2020年云南省成人高考报名时间确定了吗？</h4>
+						<p class="summary">关于2020年云南省成人高考报名时间确定了吗？小编搜索了相关资料，2020年成人高考考试时间可能为10月27日-28日</p>
+						<div class="ht">
+					     	<p class="clearfix">
+					     		<span><img src="img/list/list1.png">2020-5-23</span>
+					     		<span><img src="img/list/list2.png">0</span>
+					     		<span><img src="img/list/list3.png">29</span>
+					     		<span><img src="img/list/list4.png">考试报名</span>
+					     	</p>
+					     </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="listcon-r">
+		<p class="bm">
+			<a href="">我要报名</a>
+		</p>
+		<!-- 最新资讯 -->
+		<div class="zxzc">
+			<div class="topn">
+				<div class="top1">
+					<h3>&nbsp;&nbsp;最新资讯<span><a href="" class="gdd">更多&gt;</a></span></h3>
+				</div>
+				<div class="zxzcn">
+					<ul style="margin: 0px;">
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 最新资讯结束 -->
+
+
+		<!-- 热门专业 -->
+		<div class="zxzc">
+			<div class="topn">
+				<div class="top1">
+					<h3>&nbsp;&nbsp;热门专业<span><a href="" class="gdd">更多&gt;</a></span></h3>
+				</div>
+				<div class="zxzcn">
+					<ul style="margin: 0px;">
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 热门专业结束 -->
+
+
+		<!-- 报读院校 -->
+		<div class="zxzc">
+			<div class="topn">
+				<div class="top1">
+					<h3>&nbsp;&nbsp;报读院校<span><a href="" class="gdd">更多&gt;</a></span></h3>
+				</div>
+				<div class="zxzcn">
+					<ul style="margin: 0px;">
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+						<li class="clearfix">
+							<a href="">
+								<span class="js">•&nbsp;云南省2020年成人高考报名答疑云南省2020年成人高考报名答疑</span>
+								<span class="sj">05-15</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 报读院校结束 -->
+
+	</div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="footer" style="margin-top: 50px;">
+	<div class="footer-con clearfix">
+		<div class="footer-l clearfix">
+			<div class="item1">
+				<p>访问手机端</p>
+				<img src="img/mp.jpg">
+			</div>
+			<div class="item1">
+				<p>微信公众号</p>
+				<img src="img/mp.jpg">
+			</div>
+			<div class="item1">
+				<p>官方客服</p>
+				<img src="img/mp.jpg">
+			</div>
+		</div>
+		<div class="footer-r">
+			<h4>其他联系方式</h4>
+			<p>
+				学校地址：云南省昆明市五华区121大街142号<br>
+				招生热线：0871-123456&nbsp;&nbsp;18388888888<br>
+				官方QQ：2654103265
+			</p>
+		</div>
+	</div>
+	<p class="dz">
+		@Copyright 2019-2020.All Rights Reserved.<br>
+		黑莓科技-万引系统提供技术支持
+	</p>
+</div>
+
+
+<!-- 右侧悬浮 -->
+<div class="fixed_box">
+	<a  href="http://wpa.qq.com/msgrd?v=3&uin=1823425704&site=qq&menu=yes" title="在线咨询" target="_blank" class="tc an1" style="background-image:url(img/kf.png) ;background-size: 30px;">在线咨询</a>
+	<div id="btn1" style="position: relative;" onmouseover="document.getElementById('dv').style.display='block';" onmouseout="document.getElementById('dv').style.display='none';">
+		<a  href="#" style="background-image:url(img/dh.png);background-size: 30px;" class="an4">电话咨询 
+			<div id="dv" style="position: absolute;top: 0;right: -155px;width: 150px;display: none;background:#fff;">
+				<p style="color: #333;line-height: 30px;">0871-63937178</p>
+				<p style="color: #333;line-height: 30px;">15284481723</p>
+			</div>
+		</a>
+	</div><div id="btn" style="position: relative;" onmouseover="document.getElementById('pic').style.display='block';" onmouseout="document.getElementById('pic').style.display='none';">
+		<a  href="#" style="background-image:url(img/ewm.png);    background-size: 30px;" class="an3">微信咨询 
+			<img id="pic" src="img/mp.jpg" style="position: absolute;top: 0;right: -155px;width: 150px;height: 150px;display: none;"> 
+		</a>
+	</div>
+	<a href="bmdj.html" class="an2" style="background-image:url(img/bm.png);background-size: 30px;" target="_blank">预约报名</a>
+	
+	<!-- <a target="_blank" class="a4"  href="" style="background-image:url(img/w25_img_2.png);background-size: 30px;">电话咨询</a> -->
+	
+    <a href="" class="htop an5" style="background-image:url(img/db.png); margin-top:5px;background-size: 30px;">顶部</a>
+</div> 
+<!-- 右侧悬浮结束 -->
+
+</body>
+</html>
